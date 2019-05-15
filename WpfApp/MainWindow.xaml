@@ -1,0 +1,65 @@
+﻿<Window x:Name="mw" x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Main Window" Height="315" Width="557" WindowStyle="None" WindowStartupLocation="CenterScreen" Opacity="0.985" MaxHeight="376" MaxWidth="629" AllowsTransparency="True">
+
+
+
+    <Grid IsManipulationEnabled="True"  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="163*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Photo/campbell-boulanger-348386-unsplash.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <Grid x:Name="GR1" HorizontalAlignment="Left" Height="249" Opacity="0.85" Margin="35,37,0,0"  VerticalAlignment="Top" Width="442" Background="Black" Grid.Column="1">
+
+            <TextBox x:Name="TB1" HorizontalAlignment="Left" Height="32" Margin="31,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Login"  materialDesign:HintAssist.Foreground="White" Width="363" FontFamily="Good Times" materialDesign:HintAssist.HintOpacity="0.3" materialDesign:ColorZoneAssist.Mode="Dark" Foreground="#FFF3D8D8" FontSize="10"/>
+            <TextBox x:Name="TB2" HorizontalAlignment="Left" Height="32" Margin="31,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  materialDesign:HintAssist.Hint="Password" Width="363" FontFamily="Good Times" materialDesign:HintAssist.HintOpacity="0.3" Foreground="#FFEAD3D3" FontSize="10"/>
+            <Button x:Name="B1" Content="Log in" HorizontalAlignment="Left" Margin="31,186,0,0" VerticalAlignment="Top" Width="363" Click="Button_Click" BorderBrush="#FFB9B9B9" FontFamily="Good Times" FontWeight="Normal" Foreground="#DDB9B8B8" Background="{x:Null}" FontSize="10" Height="24"/>
+            <Label Content="Log In" HorizontalAlignment="Left" Margin="31,38,0,0" VerticalAlignment="Top" Width="267" FontFamily="Good Times" FontSize="18" Background="{x:Null}" Grid.ColumnSpan="2">
+                <Label.Foreground>
+                    <SolidColorBrush Color="#FF5B5B5B"/>
+                </Label.Foreground>
+            </Label>
+            <Button Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Left" Margin="352,17,0,0" VerticalAlignment="Top" Width="17" Height="17" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Palatino Linotype" Click="Button_Click_1" Foreground="#FFBBBBBB">
+                <materialDesign:PackIcon Kind="About" FontSize="4" Width="17"/>
+            </Button>
+            <Button Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Left" Margin="374,17,0,0" VerticalAlignment="Top" Width="20" Height="17" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_2" Foreground="#FFAAAAAA">
+                <materialDesign:PackIcon Kind="Power" FontSize="9" RenderTransformOrigin="0.75,0.5"/>
+            </Button>
+            <Button Content="*Not Registred?" HorizontalAlignment="Left" Margin="271,210,0,0" VerticalAlignment="Top" Width="137" Background="{x:Null}" Height="26" BorderBrush="{x:Null}" Foreground="#FF897F7F" FontSize="9" FontFamily="Good Times" Click="Button_Click_3"/>
+        </Grid>
+        <Grid x:Name="GR2" HorizontalAlignment="Left" Height="249" Opacity="0.85" Margin="35,37,0,0"  VerticalAlignment="Top" Width="442"  Grid.Column="1" Background="Black" Visibility="Hidden">
+            <TextBox x:Name="TBB1" HorizontalAlignment="Left" Height="26" Margin="23,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Login"  materialDesign:HintAssist.Foreground="White" Width="381" FontFamily="Good Times" materialDesign:HintAssist.HintOpacity="0.3" materialDesign:ColorZoneAssist.Mode="Dark" Foreground="#FFF3D8D8" FontSize="10"/>
+            <TextBox x:Name="TBB2" HorizontalAlignment="Left" Height="22" Margin="23,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  materialDesign:HintAssist.Hint="Password" Width="381" FontFamily="Good Times" materialDesign:HintAssist.HintOpacity="0.3" Foreground="#FFEAD3D3" FontSize="10"/>
+            <Button x:Name="BB2" Content="Sign in" HorizontalAlignment="Left" Margin="23,201,0,0"  Click="B2_Click" VerticalAlignment="Top" Width="381" Background="{x:Null}" BorderBrush="#FFB6AFAF" FontFamily="Good Times" FontWeight="Normal" Cursor="AppStarting" Foreground="#DDB9B9B9" FontSize="10" Height="24
+                    " />
+            <Label Content="Sign In" HorizontalAlignment="Left" Margin="23,21,0,0" VerticalAlignment="Top" Width="267" FontFamily="Good Times" FontSize="18" Background="{x:Null}">
+                <Label.Foreground>
+                    <SolidColorBrush Color="#FF5B5B5B"/>
+                </Label.Foreground>
+            </Label>
+            <CheckBox x:Name="CB" Content="Admin" HorizontalAlignment="Left" Margin="23,173,0,0" VerticalAlignment="Top" FontFamily="Good Times" Background="#FFB2B2B2" Foreground="#FF838383" Width="97" Height="14" FontSize="9"/>
+
+            <TextBox x:Name="TBB3" HorizontalAlignment="Left" Height="23" Margin="23,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Email"  materialDesign:HintAssist.Foreground="White" Width="381" FontFamily="Good Times" materialDesign:HintAssist.HintOpacity="0.3" materialDesign:ColorZoneAssist.Mode="Dark" Foreground="#FFDEDDDD" FontSize="10"/>
+            <TextBox x:Name="TBB4" HorizontalAlignment="Left" Height="21" Margin="23,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Phone"  materialDesign:HintAssist.Foreground="White" Width="381" FontFamily="Good Times" materialDesign:HintAssist.HintOpacity="0.3" materialDesign:ColorZoneAssist.Mode="Dark" Foreground="#FFF3D8D8" FontSize="10"/>
+            <Button Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top" Width="17" Height="24" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Palatino Linotype" Click="Button_Click_1">
+                <materialDesign:PackIcon Kind="About" FontSize="4"/>
+            </Button>
+            <Button Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" HorizontalAlignment="Left" Margin="387,10,0,0" VerticalAlignment="Top" Width="17" Height="24" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click_2">
+                <materialDesign:PackIcon Kind="Power" FontSize="9" RenderTransformOrigin="0.75,0.5"/>
+            </Button>
+
+        </Grid>
+
+    </Grid>
+
+</Window>

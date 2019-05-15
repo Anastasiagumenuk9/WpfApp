@@ -1,0 +1,155 @@
+﻿<Page x:Class="WpfApp.About"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="About">
+
+    <Grid Background="White" Opacity="0.7" Margin="0,10,0,0">
+        <RichTextBox  VerticalScrollBarVisibility="Auto" >
+            <FlowDocument >
+                <Paragraph FontFamily="Good Times">
+                    CANCELLATION POLICY AMENDMENTS and CANCELLATION </Paragraph>
+
+                <Paragraph>Cancellation of Fully Prepaid Bookings and Deposit/ Partially Prepaid Bookings</Paragraph>
+
+                <Paragraph>- If you cancel 48 hours or more prior to your pick up, you will be refunded minus the cancellation fee of 35.00 EUR*.</Paragraph>
+                <Paragraph>- If you cancel less than 48 hours before pick-up, you will be refunded minus the cancellation fee of 50.00 EUR*.</Paragraph>
+
+                <Paragraph>- If you cancel your booking less than 24 hours before pick up, you will be refunded minus the cancellation fee of 130.00 EUR*.</Paragraph>
+                <Paragraph>- If your prepayment is less than 130.00 EUR*, there won’t be any additional charge, but you won’t receive any refund. No refund will be applied for unused rental days.</Paragraph>
+                <Paragraph>- You cannot cancel your booking if your rental has already started.</Paragraph>
+
+                <Paragraph>*Or the same amount in USD/GBP at the exchange rate on the cancellation date</Paragraph>
+                
+
+                    <Paragraph>- wish to cancel but don’t tell us before your rental is due to start;</Paragraph>
+                    <Paragraph>- fail to pick the car up at the arranged time and date;</Paragraph>
+                    <Paragraph>- fail to provide the documentation that’s required to pick the car up;</Paragraph>
+                    <Paragraph>- fail to provide a credit card in the main driver’s name with enough available funds on it</Paragraph>
+
+                <Paragraph>In all of these cases, you’ll receive no refund of the money you’ve paid.</Paragraph>
+
+                <Paragraph>The car rental company reserves the right to refuse the car to any customer who fails to arrive at the scheduled time and date with all necessary documentation and a credit card in the main driver’s name with enough available funds for the car’s deposit.</Paragraph>
+
+
+
+                    <Paragraph>You can amend your rental online at least 24 hours before your rental is due to start. The cost of each amendment, implying a decrease in value and a return of the difference to the customer, is 10.00 EUR*. Please note that any amendment such as amendment of pick-up or drop-off location, car group, rental period and driver’s personal details may affect rental price which may be different from what you paid initially.
+You can amend your rental online at least 24 hours before your rental is due to start. The cost of each amendment, implying a decrease in value and a return of the difference to the customer, is 10.00 EUR*. Please note that any amendment such as amendment of pick-up or drop-off location, car group, rental period and driver’s personal details may affect rental price which may be different from what you paid initially.
+Please call us if your pick-up time is less than 48 hours away and you wish to amend your booking.
+Please note: prices are based on the pick-up and drop-off times and dates that you arrange before your rental starts. If you pick the car up any later or bring it back any earlier, you will not receive a refund for unused hours or days.
+RENTAL CONDITIONS
+
+Driver's age
+26 to 99 years.
+
+Young driver's age: 21 to 25 years. Charge 6 EUR per day. Maximum 24 EUR. Includes 20% tax
+
+Customers who fall outside the age limitations will not be able to hire a car unless there is a young or senior driver fee specified in this section. Please note that if applicable, this fee will be included in the rental price and will be payable on arrival at the rental desk in the local currency.
+
+Driver's licence
+
+A full licence held for minimum of 2 years with no major endorsements. UK licence holders need to present the photocard.
+
+In case of a No-Deal Brexit UK customers will be required to present an International Driver’s Permit. For more information please visit https://www.gov.uk/driving-abroad/international-driving-permit
+
+International Driving Permit needed along with original domestic licence.
+
+Deposit and Credit card Information
+
+ACCEPTED: American Express, Bank Card, Carte Blanche, Carte Bleue, Cash Only, Diners Club, Discover Card, Eurocard, Japanese Credit Bureau Credit Card, MasterCard (not prepaid), Visa (not prepaid). Debit card not accepted unless otherwise stated below.
+
+A deposit amount of EUR 600.0 will be held against your credit card for the duration of the rental. Your deposit is a guarantee held in the event of damage/theft of the vehicle. This will be automatically released if there is no theft or damage during the rental period. Please note that this does not represent your total excess liability which can be found in the Insurance Coverage section.
+
+NOT ACCEPTED: No other payment types will be accepted.
+
+A valid credit card in the first name and surname (no abbreviations) of the lead driver must be presented at the rental desk in order to pre-authorise/charge a deposit. The credit card(s) must be embossed and a PIN number may be required.
+
+In the event that you fail to present a valid credit card, there is a lack of sufficient funds available on the credit card or the credit card is not in the lead driver's name, the car rental agent may refuse to release the vehicle. In these instances, no funds paid will be reimbursed.
+
+Insurance coverage
+
+Collision damage waiver (CDW): Includes 20% tax; Excess 600 EUR
+
+Theft waiver (TW): Includes 20% tax; Excess 600 EUR
+
+Third party liability protection (TP): Includes 20% tax
+
+The Excess Liability is the amount determined by the car rental supplier for which you can be held liable in case of damage/theft of the vehicle. Damage to or loss of tyres, windscreens, glass and undercarriage may not be covered by the CDW (Collision Damage Waiver). Please check with the rental agent at the desk.
+
+If you purchase the Excess Reimbursement Insurance from a third party, the main driver will be required to present their credit card at the rental desk in order for the car rental agent to authorize the deposit.
+
+Breakdown assistance
+
+Includes 20% tax
+
+Fuel policy
+
+Fuel: Pick up and return full.
+
+Your vehicle will be supplied with a full tank of fuel. To avoid incurring fuel charges, you will need to return it with the same amount of fuel as it had when you collected it. You may be required to leave a fuel deposit reserved or charged on your credit card, this will be released or refunded when you return the car full. Missing fuel will be charged on your return. The price per litre charged by the rental agent may be significantly higher than the price at the local service station. A refuelling charge may also be applicable.
+
+Fuel charges are payable at the rental desk unless otherwise stated in the top section of rate details.
+
+Mileage policy
+
+Unlimited
+
+Special equipment/optional extras
+
+Booster seat: 12 EUR per day. Maximum 60 EUR. Includes 20% tax; On request
+
+Child toddler seat: 12 EUR per day. Maximum 60 EUR. Includes 20% tax; On request
+
+Infant child seat: 12 EUR per day. Maximum 60 EUR. Includes 20% tax; On request
+
+GPS: 12 EUR per day. Maximum 60 EUR. Includes 20% tax; On request
+
+Special equipment/optional extras may be requested at the time of booking, but they are not included in the rental price. They are paid in the local currency at the rental desk.
+
+Conditions of optional extras
+
+Please note the following: The price of optional extras is subject to change without notice. Optional extras are subject to availability. Charges made at the desk may be subject to local/airport surcharges.
+
+Additional driver
+
+Maximum additional drivers: 2. 12 EUR per day. Maximum 60 EUR. Includes 20% tax; On request
+
+Travel Restrictions
+
+All international, state and island crossings are disallowed.
+
+Tax rate
+
+20%
+
+Included in the rental price.
+
+Fees
+
+Airport fee: Includes 20% tax
+
+Please note credit card fees apply. Fees vary per card type, please check with the supplier at the desk.
+
+Form(s) of ID
+
+A valid photo ID (passport or national ID).
+
+If your form of identification does not include or match your current address, then a separate printed proof of address is required.
+
+Car types
+
+The vehicle displayed and models listed are the most common vehicles used by our car rental partners. We cannot guarantee the make or model of the rental vehicle will be the same as the vehicle displayed on our website.
+
+Voucher
+
+A printed version of your voucher must be produced upon arrival at the rental desk. Failure to present the voucher means the car rental agent may charge you at the local rates. Please note: We are not responsible for overcharges on rentals where the voucher was not presented to the local agent on collection of the vehicle. If you do not present the required documents, the documentation is not valid or you do not have enough funds on your credit card, the car rental agent may refuse to release the vehicle and no funds will be reimbursed.
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Page>

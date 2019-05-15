@@ -1,0 +1,32 @@
+﻿<Page x:Class="WpfApp.EditUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="100" d:DesignWidth="702"
+      Title="EditUser">
+
+    <Grid>
+        <Grid Background="#FFA2A2A2" Opacity="0.6">
+
+
+            <Button  Height="Auto" Width="Auto" Background="{x:Null}" BorderBrush="{x:Null}"   Foreground="White"   Margin="636,22,10,52" Click="Button_Click_1"  >
+                <materialDesign:PackIcon Kind="Edit"/>
+            </Button>
+            <Button  Height="Auto" Width="Auto" Background="{x:Null}" BorderBrush="{x:Null}"   Foreground="White"   Margin="636,48,10,26" Click="Button_Click"  >
+                <materialDesign:PackIcon Kind="Cancel"/>
+            </Button>
+            <TextBox x:Name="TB2" materialDesign:HintAssist.Hint="Login" HorizontalAlignment="Left" Height="23" Margin="59,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="117" FontFamily="Good Times" FontSize="11" />
+            <TextBox x:Name="TB3" materialDesign:HintAssist.Hint="Password" HorizontalAlignment="Left" Height="23" Margin="219,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" FontFamily="Good Times" FontSize="11" />
+            <TextBox x:Name="TB4" materialDesign:HintAssist.Hint="Email" HorizontalAlignment="Left" Height="23" Margin="417,22,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" FontFamily="Good Times" FontSize="11" />
+            <TextBox x:Name="TB5" materialDesign:HintAssist.Hint="Phone" HorizontalAlignment="Left" Height="23" Margin="219,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" FontFamily="Good Times" FontSize="11" />
+            <CheckBox x:Name="CB" Content="IsAdmin"  HorizontalAlignment="Left" Margin="417,56,0,0" VerticalAlignment="Top" Width="105" FontFamily="Good Times" FontSize="11" Foreground="#FF4B4B4B" Background="#FF383838"/>
+            <TextBox x:Name="TB1" materialDesign:HintAssist.Hint="ID" HorizontalAlignment="Left" Height="23" Margin="59,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="117" FontFamily="Good Times" FontSize="11" />
+
+        </Grid>
+
+    </Grid>
+</Page>

@@ -1,0 +1,118 @@
+﻿<Page x:Class="WpfApp.Rendd"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:local="clr-namespace:WpfApp"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" d:DesignWidth="774"
+      Title="Rend" Height="550" Width="775">
+
+    <Grid Opacity="0.7" Margin="0,10,0,0" Background="White">
+        <Grid Height="550" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="59*"/>
+                <ColumnDefinition Width="21*"/>
+            </Grid.ColumnDefinitions>
+            <Border BorderThickness="1" HorizontalAlignment="Left" Height="24" Margin="162,193,0,0" VerticalAlignment="Top" Width="107" Background="#FFD1D1D1"/>
+            <Image  x:Name="Img" HorizontalAlignment="Left" Height="158" Margin="61,28,0,0" VerticalAlignment="Top" Width="250" >
+                <Image.ToolTip>
+                    <ToolTip x:Name="TT" Background="#60000000" Foreground="Black" HasDropShadow="False"
+                Placement="Relative" HorizontalOffset="260" VerticalOffset="26" BorderBrush="{x:Null}" Opacity="0.9" FontFamily="MV Boli">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="AirConditioner"/>
+                            
+                            <TextBlock FontSize="11" Foreground="Black" Text="{Binding Path=Cond}" VerticalAlignment="Center" FontFamily="Good Times"   />
+                            <TextBlock FontSize="11" Foreground="Black" Text="  " VerticalAlignment="Center" FontFamily="Good Times"   />
+                            <TextBlock FontSize="11" Foreground="#FF232323" Text="Count Of Seats:" VerticalAlignment="Center" FontFamily="Good Times" />
+                            <TextBlock FontSize="11" Foreground="Black" Text="{Binding Path=Seat}" VerticalAlignment="Center" FontFamily="Good Times" />
+                            <TextBlock FontSize="11" Foreground="Black" Text="  " VerticalAlignment="Center" FontFamily="Good Times"   />
+                            <materialDesign:PackIcon Kind="PetrolPump"/>
+                            <TextBlock FontSize="11" Foreground="Black" Text="{Binding Path=Pet}" VerticalAlignment="Center" FontFamily="Good Times" />
+                            <TextBlock FontSize="11" Foreground="Black" Text="  " VerticalAlignment="Center" FontFamily="Good Times"   />
+                            <TextBlock FontSize="11" Foreground="Black" Text="Class:" VerticalAlignment="Center" FontFamily="Good Times" />
+                            <TextBlock FontSize="11" Foreground="Black" Text="{Binding Path=Class}" VerticalAlignment="Center" FontFamily="Good Times" />
+                            <TextBlock FontSize="11" Foreground="Black" Text="  " VerticalAlignment="Center" FontFamily="Good Times"   />
+                            <TextBlock FontSize="11" Foreground="Black" Text="Transmission:" VerticalAlignment="Center" FontFamily="Good Times" />
+                            <TextBlock FontSize="11" Foreground="Black" Text="{Binding Path=Trans}" VerticalAlignment="Center" FontFamily="Good Times" />
+                            <TextBlock FontSize="11" Foreground="Black" Text="  " VerticalAlignment="Center" FontFamily="Good Times"   />
+                        </StackPanel>
+                    </ToolTip>
+                </Image.ToolTip>
+            </Image>
+            <ComboBox x:Name="ComBox" HorizontalAlignment="Left" Margin="457,55,0,0" VerticalAlignment="Top" Width="225" Background="#FFCDCDCD" SelectionChanged="ComboBox_SelectionChanged" FontFamily="MV Boli" Height="25" Grid.ColumnSpan="2" FontSize="11" >
+                <ListBox Height="100" Width="100"/>
+            </ComboBox>
+            <Label Opacity="1" Content="Country" HorizontalAlignment="Left" Margin="459,21,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="Good Times"/>
+            <Label Opacity="1" Content="City" HorizontalAlignment="Left" Margin="459,94,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="Good Times"/>
+            <ComboBox x:Name="ComBox1" HorizontalAlignment="Left" Margin="459,123,0,0" VerticalAlignment="Top" Width="223" Background="#FFCDCDCD" SelectionChanged="ComBox1_SelectionChanged" FontFamily="MV Boli" Height="25" Grid.ColumnSpan="2" FontSize="11"  />
+            <Label Opacity="1" Content="Location" HorizontalAlignment="Left" Margin="457,159,0,0" VerticalAlignment="Top" Foreground="Black" FontFamily="Good Times"/>
+            <ComboBox x:Name="ComBox2" HorizontalAlignment="Left" Margin="459,186,0,0" VerticalAlignment="Top" Width="223" Background="#FFCDCDCD" SelectionChanged="ComBox2_SelectionChanged" FontFamily="MV Boli" Height="25" Grid.ColumnSpan="2" FontSize="11"  />
+            <DatePicker x:Name="DP1" HorizontalAlignment="Left" Margin="60,224,0,0" VerticalAlignment="Top" Width="281" Background="{x:Null}" BorderBrush="#89111111" FontFamily="Good Times" FontSize="11" Height="25" />
+            <DatePicker x:Name="DP2" HorizontalAlignment="Left" Margin="61,294,0,0" VerticalAlignment="Top" Width="280" Background="{x:Null}" BorderBrush="#89111111" FontSize="11" FontFamily="Good Times" RenderTransformOrigin="0.5,0.5" Height="24"/>
+            <Label Content="Day Start" HorizontalAlignment="Left" Margin="60,197,0,0" VerticalAlignment="Top" Width="139" Foreground="Black" FontFamily="Good Times"/>
+            <Label Content="Day Stop" HorizontalAlignment="Left" Margin="60,265,0,0" VerticalAlignment="Top" Width="142" Foreground="Black" FontFamily="Good Times"/>
+            <CheckBox x:Name="ChB"  Content="Add Driver" HorizontalAlignment="Left" Margin="459,294,0,0" VerticalAlignment="Top" FontFamily="Good Times" BorderBrush="#FF403F3F" Background="#FFCBC9C9">
+                <CheckBox.ToolTip>
+                    <ToolTip Background="#60000000" Foreground="Black" HasDropShadow="False"
+                Placement="Relative" HorizontalOffset="10" VerticalOffset="26" BorderBrush="{x:Null}" Opacity="0.9" FontFamily="MV Boli">
+                        <StackPanel>
+                            <TextBlock>Rend Car With Driver</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </CheckBox.ToolTip>
+            </CheckBox>
+            <ComboBox x:Name="CB3" HorizontalAlignment="Left" Margin="459,252,0,0" VerticalAlignment="Top" Width="223" Background="#FFDAD5D5" SelectionChanged="CB3_SelectionChanged" FontFamily="MV Boli" Height="25" Grid.ColumnSpan="2" FontSize="11"/>
+            <Label Content="Car" Foreground="Black" HorizontalAlignment="Left" Margin="459,224,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="72" FontFamily="Good Times"/>
+            <Button Content="Calculate"  HorizontalAlignment="Left" Margin="60,339,0,0" VerticalAlignment="Top" Width="281" FontFamily="Good Times" FontSize="12" Background="#FFDCD9D9" BorderBrush="{x:Null}" Click="Button_Click" Height="24" Foreground="Black">
+                <Button.ToolTip>
+                    <ToolTip Background="#60000000" Foreground="Black" HasDropShadow="False"
+                Placement="Relative" HorizontalOffset="180" VerticalOffset="26" BorderBrush="{x:Null}" Opacity="0.9" FontFamily="MV Boli">
+                        <StackPanel>
+                            <TextBlock>Calculate Price</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <TextBox x:Name="TB" materialDesign:HintAssist.Hint="Price" HorizontalAlignment="Left" Height="24" Margin="459,339,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="223" FontFamily="Good Times" Background="{x:Null}" Grid.ColumnSpan="2" BorderBrush="#89A6A4A4"/>
+            <ComboBox x:Name="m"  HorizontalAlignment="Left" Margin="232,193,0,0" VerticalAlignment="Top" Width="37" FontFamily="Good Times" Height="22" IsSynchronizedWithCurrentItem="False">
+                <ComboBox.ToolTip>
+                    <ToolTip Background="#60000000" Foreground="Black" HasDropShadow="False"
+                Placement="Relative" HorizontalOffset="0" VerticalOffset="26" BorderBrush="{x:Null}" Opacity="0.9" FontFamily="MV Boli">
+                        <StackPanel>
+                            <TextBlock>Minutes</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </ComboBox.ToolTip>
+            </ComboBox>
+            <ComboBox x:Name="h"  HorizontalAlignment="Left" Margin="172,194,0,0" VerticalAlignment="Top" Width="37" FontFamily="Good Times" IsTextSearchCaseSensitive="True" Height="22">
+                <ComboBox.ToolTip>
+                    <ToolTip Background="#60000000" Foreground="Black" HasDropShadow="False"
+                Placement="Relative" HorizontalOffset="0" VerticalOffset="26" BorderBrush="{x:Null}" Opacity="0.9" FontFamily="MV Boli">
+                        <StackPanel>
+                            <TextBlock>Hour</TextBlock>
+                        </StackPanel>
+                    </ToolTip>
+                </ComboBox.ToolTip>
+            </ComboBox>
+            <Label Content=":" HorizontalAlignment="Left" Margin="210,189,0,0" VerticalAlignment="Top" Width="14" Foreground="#DD000000"/>
+            <ComboBox x:Name="CB4" HorizontalAlignment="Left" Margin="61,406,0,0" VerticalAlignment="Top" Width="280" Background="#FFDAD5D5"  FontFamily="MV Boli" Height="25" FontSize="11" Visibility="Hidden"/>
+            <Label x:Name="Label" Content="Promotion" Foreground="#FF290202" HorizontalAlignment="Left" Margin="61,379,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="111" FontFamily="Good Times" Visibility="Hidden"/>
+            <TextBox x:Name="TB1" materialDesign:HintAssist.Hint="With Promo" HorizontalAlignment="Left" Height="24" Margin="459,406,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="223" FontFamily="Good Times" Background="{x:Null}" Grid.ColumnSpan="2" BorderBrush="#89A6A4A4"/>
+        </Grid>
+        <Button x:Name="B" Content="Rend" Visibility="Hidden" IsEnabled="False" HorizontalAlignment="Left" Margin="56,462,0,0" VerticalAlignment="Top" Width="633" Height="24" Background="#FFCFCFCF" BorderBrush="{x:Null}" FontFamily="Good Times" FontSize="12" Click="Button_Click_1">
+            <Button.ToolTip>
+                <ToolTip Background="#60000000" Foreground="Black" HasDropShadow="False"
+                Placement="Relative" HorizontalOffset="544" VerticalOffset="26" BorderBrush="{x:Null}" Opacity="0.9" FontFamily="MV Boli">
+                    <StackPanel>
+                        <TextBlock>To Rend Car </TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+    </Grid>
+
+
+
+</Page>
