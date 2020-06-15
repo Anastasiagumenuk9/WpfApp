@@ -27,8 +27,7 @@ namespace WpfApp
     {
         public AddCar()
         {
-            InitializeComponent();
-            
+            InitializeComponent(); 
         }
 
         private string selectedFileName;
@@ -76,39 +75,26 @@ namespace WpfApp
                             cars.Price = Convert.ToDouble(TB7.Text);
                             context.Car.Add(cars);
                             context.SaveChanges();
-
-
                         }
-
                     }
                 }
-
                 else
                 {
                     MessageBoxResult msr = MessageBox.Show("Input all information!");
                 }
             }
-                catch
-               {
-                MessageBox.Show("Input Correct Data!");
-               }
-
-                
-              
-
+            catch
+            {
+               MessageBox.Show("Input Correct Data!");
+            }
                 this.IsEnabled = false;
                 this.Visibility = Visibility.Hidden;
             }
-            
-
-        
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             this.Visibility = Visibility.Hidden;
             
         }
-
-      
     }
 }
